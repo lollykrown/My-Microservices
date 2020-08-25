@@ -31,11 +31,11 @@ let transporter = nodemailer.createTransport({
 });
 
 function mailingController() {
-  function sendMailtoLoneRecipients(req, res) {
+  function sendMailtoLoneRecipient(req, res) {
     (async function mail() {
       try {
         let { recipient_email, sender_name, sender_email, subject, body } = req.body;
-        //debug(recipients, subject, body);
+        debug(recipient_email, sender_name, sender_email, subject, body);
 
         if (!recipient_email || !subject || !body) {
           res.status(400).send({
@@ -272,7 +272,7 @@ function mailingController() {
 }
 
 return {
-  sendMailtoLoneRecipients,
+  sendMailtoLoneRecipient,
   sendMailtoMultipleRecipients,
   sendMailWithTemplate,
   sendMailWithMailgenTemplate
