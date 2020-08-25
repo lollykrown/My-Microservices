@@ -28,5 +28,4 @@ app.get('/v1/documentation', (req, res) => {
 port = process.env.PORT
 app.listen(port, function () {
   console.log(`Listening on port ${port}...`)
-})
-© 2020 GitHub, 
+}) 
