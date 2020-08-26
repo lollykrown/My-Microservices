@@ -3,16 +3,11 @@ const mailingRouter = express.Router();
 const mailingController = require('../controller/mailingController');
 
 function router() {
-  const { sendMailtoLoneRecipient, sendMailtoMultipleRecipients, 
-    sendMailWithTemplate, sendMailWithMailgenTemplate } = mailingController();
+  const { sendMail, sendMailWithTemplate, sendMailWithMailgenTemplate } = mailingController();
 
-  mailingRouter.route('/sendmailToOne').post(sendMailtoLoneRecipient)
-  .get((req, res) => {
-    res.send('works')
-  });
-  mailingRouter.route('/sendmailToMany').post(sendMailtoMultipleRecipients);
+  mailingRouter.route('/sendmail').post(sendMail);
   mailingRouter.route('/sendmailwithtemplate').post(sendMailWithTemplate);
-  mailingRouter.route('/sendmailwithtemplate').post(sendMailWithMailgenTemplate);
+  mailingRouter.route('/sendmailwithmailgen').post(sendMailWithMailgenTemplate);
 
   return mailingRouter;
 }

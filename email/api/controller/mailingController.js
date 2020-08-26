@@ -31,64 +31,30 @@ let transporter = nodemailer.createTransport({
 });
 
 function mailingController() {
-  function sendMailtoLoneRecipient(req, res) {
+  function sendMail(req, res) {
     (async function mail() {
       try {
         let { recipient_email, sender_name, sender_email, subject, body } = req.body;
         debug(recipient_email, sender_name, sender_email, subject, body);
 
-        if (!recipient_email || !subject || !body) {
-          res.status(400).send({
-            status: 'failed',
-            data: { message: 'Add recipient\'s email, subject and body.' }
-          })
-          return
-        }
-        let emailsAreValid = validateEmail(recipient_email);
-        if (!emailsAreValid) {
-          res.status(400).send({
-            status: 'failed',
-            data: { message: 'Invalid email!' }
-          })
-        } else {
-          let from = `${sender_name} <${sender_email}>`;
-          let mailOptions = {
-            from: from,
-            to: recipient_email,
-            cc: [],
-            bcc: [],
-            subject: subject,
-            text: body,
-          };
-
-          transporter.sendMail(mailOptions, function (err, info) {
-            if (err) {
-              res.status(500).send({
-                status: 'failed',
-                data: { message: 'An unknown error occured!' }
-              });
-              debug(err);
-            }
-            debug(`Email sent: ${info.response}`);
-            res.status(200).json({ status: 'success', data: { message: 'mail sent successfully' } });
-          })
-          //
-        }
-      } catch (err) {
-        debug(err.stack)
-      }
-    }());
-  }
-  function sendMailtoMultipleRecipients(req, res) {
-    (async function mail() {
-      try {
-        let { recipient_emails, sender_name, sender_email, subject, body } = req.body;
-        debug(recipient_emails, subject, body);
-
-        if (!recipient_emails) {
+        if (!recipient_email) {
           res.status(400).send({
             status: 'failed',
             data: { message: 'Add recipients email' }
+          })
+          return
+        }
+        if (!sender_name) {
+          res.status(400).send({
+            status: 'failed',
+            data: { message: 'Add Sender\'s name' }
+          })
+          return
+        }
+        if (!sender_email) {
+          res.status(400).send({
+            status: 'failed',
+            data: { message: 'Add Sender\'s email' }
           })
           return
         }
@@ -107,7 +73,7 @@ function mailingController() {
           return
         }
 
-        let emailsAreValid = validateEmail(recipient_emails);
+        let emailsAreValid = validateEmail(recipient_email);
         if (!emailsAreValid) {
           res.status(400).send({
             status: 'failed',
@@ -115,7 +81,6 @@ function mailingController() {
           })
         } else {
           let from = `${sender_name} <${sender_email}>`;
-
           let mailOptions = {
             from: from,
             to: recipient_email,
@@ -143,18 +108,49 @@ function mailingController() {
       }
     }());
   }
+
   function sendMailWithTemplate(req, res) {
     (async function mail() {
       try {
-        let { recipient_email, sender_name, sender_email, subject, body, account_id, access_token } = req.body;
+        let { recipient_email, sender_name, sender_email, subject, body } = req.body;
+        debug(recipient_email, sender_name, sender_email, subject, body);
 
-        if (!recipient_email || !subject || !body) {
+        if (!recipient_email) {
           res.status(400).send({
             status: 'failed',
-            data: { message: 'Add recipients email, subject and body.' }
+            data: { message: 'Add recipients email' }
           })
           return
         }
+        if (!sender_name) {
+          res.status(400).send({
+            status: 'failed',
+            data: { message: 'Add Sender\'s name' }
+          })
+          return
+        }
+        if (!sender_email) {
+          res.status(400).send({
+            status: 'failed',
+            data: { message: 'Add Sender\'s email' }
+          })
+          return
+        }
+        if (!subject) {
+          res.status(400).send({
+            status: 'failed',
+            data: { message: 'Add email subject.' }
+          })
+          return
+        }
+        if (!body) {
+          res.status(400).send({
+            status: 'failed',
+            data: { message: 'Add email body.' }
+          })
+          return
+        }
+
         let emailsAreValid = validateEmail(recipient_email);
         if (!emailsAreValid) {
           res.status(400).send({
@@ -191,18 +187,47 @@ function mailingController() {
     }());
   }
 
-  function sendMailWithMailgenTemplate(email, token) {
+  function sendMailWithMailgenTemplate(req, res) {
     (async function mail() {
       try {
-        let { recipient_email, sender_name, sender_email, subject, body, account_id, access_token } = req.body;
+        let { recipient_email, sender_name, sender_email, subject, body } = req.body;
 
-        if (!recipient_email || !subject || !body) {
+        if (!recipient_email) {
           res.status(400).send({
             status: 'failed',
-            data: { message: 'Add recipients email, subject and body.' }
+            data: { message: 'Add recipients email' }
           })
           return
         }
+        if (!sender_name) {
+          res.status(400).send({
+            status: 'failed',
+            data: { message: 'Add Sender\'s name' }
+          })
+          return
+        }
+        if (!sender_email) {
+          res.status(400).send({
+            status: 'failed',
+            data: { message: 'Add Sender\'s email' }
+          })
+          return
+        }
+        if (!subject) {
+          res.status(400).send({
+            status: 'failed',
+            data: { message: 'Add email subject.' }
+          })
+          return
+        }
+        if (!body) {
+          res.status(400).send({
+            status: 'failed',
+            data: { message: 'Add email body.' }
+          })
+          return
+        }
+
         let emailsAreValid = validateEmail(recipient_email);
         if (!emailsAreValid) {
           res.status(400).send({
@@ -271,8 +296,7 @@ function mailingController() {
 }
 
 return {
-  sendMailtoLoneRecipient,
-  sendMailtoMultipleRecipients,
+  sendMail,
   sendMailWithTemplate,
   sendMailWithMailgenTemplate
 };
