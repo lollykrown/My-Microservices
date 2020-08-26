@@ -66,10 +66,15 @@ function mailingController() {
             Sender's name: ${name}
             Sender's email: ${email}
 
+            Message:
+
             ${message}
             
+            
             regards,
-            NodeJs contact form microservice
+            NodeJs contact form Microservice
+
+            Built with love by Lollykrown
             `,
           };
 
