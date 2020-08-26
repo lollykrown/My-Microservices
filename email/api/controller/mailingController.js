@@ -16,7 +16,7 @@ let mailGenerator = new Mailgen({
   theme: "default",
   product: {
     name: "Lollykrown",
-    link: process.env.HOST_URL,
+    link: process.env.DEV_HOST_URL,
     // logo: "http://lollykrown.herokuapp.com/img/logo.png",
     copyright: "Copyright © 2020 Lollykrown. All rights reserved.",
   },
