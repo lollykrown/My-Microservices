@@ -83,12 +83,12 @@ function mailingController() {
     (async function mail() {
       try {
         let { recipient_emails, sender_name, sender_email, subject, body } = req.body;
-        //debug(recipients, subject, body);
+        debug(recipient_emails, subject, body);
 
         if (!recipient_emails) {
           res.status(400).send({
             status: 'failed',
-            data: { message: 'Add recipients email, subject and body.' }
+            data: { message: 'Add recipients email' }
           })
           return
         }
@@ -99,7 +99,6 @@ function mailingController() {
           })
           return
         }
-
         if (!body) {
           res.status(400).send({
             status: 'failed',
