@@ -1,7 +1,6 @@
 const express = require('express')
-const morgan = require('morgan'); //logger
 const bodyParser = require('body-parser');
-const Logger = require('./logger')();
+const Logger = require('./logger');
 
 
 require('dotenv').config()
@@ -12,10 +11,9 @@ const logger = new Logger('app');
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(morgan('tiny'))
 
 
-app,post('/test', (req, res)=>{
+app.post('/test', (req, res)=>{
   const body = req.body
 
   let error = {}
