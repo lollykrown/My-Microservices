@@ -1,0 +1,5 @@
+DEV_HOST_URL='http://127.0.0.1:8081'
+USER='example@gmail.com'
+PASSWORD='password'
+PORT='8081'
+SITE_OWNER_EMAIL='example@yahoo.com'
