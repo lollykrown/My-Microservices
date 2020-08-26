@@ -58,13 +58,19 @@ function mailingController() {
           let from = `Contact Form Mailer <kay.nazirite@gmail.com>`;
           let mailOptions = {
             from: from,
-            to: 'joe_kayu@yahoo.com',
+            to: process.env.SITE_OWNER_EMAIL,
             cc: [],
             bcc: [],
             subject: `Message from ${name}`,
-            text: `Sender's name: ${name}
+            text: `
+            Sender's name: ${name}
             Sender's email: ${email}
-            ${body}`,
+
+            ${message}
+            
+            regards,
+            NodeJs contact form microservice
+            `,
           };
 
           transporter.sendMail(mailOptions, function (err, info) {
