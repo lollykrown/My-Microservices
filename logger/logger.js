@@ -2,7 +2,7 @@ const debug = require('debug')('app:logger');
 const winston = require('winston')
 
 dateFormat = () => {
-  return new Date(Date.now()).toUTCString();
+  return new Date(Date.now()).toString();
 }
 
 // Ignore log messages if they have { private: true }
@@ -25,7 +25,7 @@ class Loggerservice {
       ],
       format: winston.format.printf((info) => {
         ignorePrivate()
-        let message = `${dateFormat()} | ${info.level.toUpperCase()} | ${route}.log | ${info.message} | `
+        let message = `${dateFormat()} | ${info.level.toUpperCase()} | ${route}.log | Message: ${info.message} | `
 
         message = info.obj ? message + `data:${JSON.stringify(info.obj)} | ` : message
         

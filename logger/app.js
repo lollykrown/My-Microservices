@@ -14,7 +14,8 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.all('*', (req, res, next) => {
-  logger.info('Incoming request', { method: req.method})
+  const url = req.protocol + '://' + req.get('host') + req.originalUrl;
+  logger.info('Incoming request', { method: req.method, url})
 
   logger.debug('Incoming request verbose', {
     headers: req.headers.host,
@@ -42,18 +43,20 @@ app.post('/test', (req, res)=>{
     error['age'] = 'age field is empty'
   }
   if (!gender) {
-    logger.error('gender field is empty')
+    logger.error('Gender field is empty')
     error['gender'] = 'gender fild is empty'
   }
 
   if (Object.keys(error).length != 0) {
-    logger.error('Return error response', {
-      'success': false
+    logger.error('Error response', {
+      status: false,
+      message: 'unsuccessful'
     })
     res.send('Error')
   } else {
-    logger.info('Return success response', {
-      'success': true
+    logger.info('Success response', {
+      status: true,
+      message: 'success'
     })
     res.send('No Error')
   }

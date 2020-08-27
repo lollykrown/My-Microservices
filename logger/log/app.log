@@ -53,3 +53,49 @@ Thu, 27 Aug 2020 08:59:21 GMT | ERROR | app.log | Age field is empty | log_data:
 Thu, 27 Aug 2020 08:59:21 GMT | ERROR | app.log | gender field is empty | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
 Thu, 27 Aug 2020 08:59:21 GMT | ERROR | app.log | Return error response | data:{"success":false} | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
 Thu, 27 Aug 2020 08:59:46 GMT | INFO | app.log | App launched on port 8081... | 
+Thu, 27 Aug 2020 09:01:58 GMT | INFO | app.log | App launched on port 8081... | 
+Thu, 27 Aug 2020 09:02:03 GMT | INFO | app.log | App launched on port 8081... | 
+Date: Thu Aug 27 2020 10:02:34 GMT+0100 (West Africa Standard Time) | INFO | app.log | App launched on port 8081... | 
+undefined | INFO | app.log | App launched on port 8081... | 
+undefined | INFO | app.log | App launched on port 8081... | 
+undefined | INFO | app.log | App launched on port 8081... | 
+10:03:15 AM | INFO | app.log | App launched on port 8081... | 
+Thu Aug 27 2020 10:03:18 GMT+0100 (West Africa Standard Time) | INFO | app.log | App launched on port 8081... | 
+Thu Aug 27 2020 10:03:56 GMT+0100 (West Africa Standard Time) | INFO | app.log | App launched on port 8081... | 
+Thu Aug 27 2020 10:04:14 GMT+0100 (West Africa Standard Time) | INFO | app.log | App launched on port 8081... | 
+Thu Aug 27 2020 10:04:18 GMT+0100 (West Africa Standard Time) | INFO | app.log | App launched on port 8081... | 
+Thu Aug 27 2020 10:04:23 GMT+0100 (West Africa Standard Time) | INFO | app.log | App launched on port 8081... | 
+Thu Aug 27 2020 10:04:31 GMT+0100 (West Africa Standard Time) | INFO | app.log | Incoming request | data:{"method":"POST","url":"http://localhost:8081/test"} | 
+Thu Aug 27 2020 10:04:31 GMT+0100 (West Africa Standard Time) | INFO | app.log | Request received at /test | data:{"email":"lollykrown@gmail.com","message":"testing tester"} | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:04:31 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Name field is empty | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:04:31 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Age field is empty | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:04:31 GMT+0100 (West Africa Standard Time) | ERROR | app.log | gender field is empty | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:04:31 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Return error response | data:{"success":false} | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:06:07 GMT+0100 (West Africa Standard Time) | INFO | app.log | Error Message: App launched on port 8081... | 
+Thu Aug 27 2020 10:06:15 GMT+0100 (West Africa Standard Time) | INFO | app.log | Message: App launched on port 8081... | 
+Thu Aug 27 2020 10:06:28 GMT+0100 (West Africa Standard Time) | INFO | app.log | Message: Incoming request | data:{"method":"POST","url":"http://localhost:8081/test"} | 
+Thu Aug 27 2020 10:06:28 GMT+0100 (West Africa Standard Time) | INFO | app.log | Message: Request received at /test | data:{"email":"lollykrown@gmail.com","message":"testing tester"} | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:06:28 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Message: Name field is empty | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:06:28 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Message: Age field is empty | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:06:28 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Message: gender field is empty | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:06:28 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Message: Return error response | data:{"success":false} | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:07:17 GMT+0100 (West Africa Standard Time) | INFO | app.log | Message: App launched on port 8081... | 
+Thu Aug 27 2020 10:07:34 GMT+0100 (West Africa Standard Time) | INFO | app.log | Message: App launched on port 8081... | 
+Thu Aug 27 2020 10:07:37 GMT+0100 (West Africa Standard Time) | INFO | app.log | Message: App launched on port 8081... | 
+Thu Aug 27 2020 10:07:39 GMT+0100 (West Africa Standard Time) | INFO | app.log | Message: App launched on port 8081... | 
+Thu Aug 27 2020 10:07:44 GMT+0100 (West Africa Standard Time) | INFO | app.log | Message: Incoming request | data:{"method":"POST","url":"http://localhost:8081/test"} | 
+Thu Aug 27 2020 10:07:44 GMT+0100 (West Africa Standard Time) | INFO | app.log | Message: Request received at /test | data:{"email":"lollykrown@gmail.com","message":"testing tester"} | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:07:44 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Message: Name field is empty | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:07:44 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Message: Age field is empty | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:07:44 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Message: Gender field is empty | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:07:44 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Message: Error response | data:{"success":false} | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:08:07 GMT+0100 (West Africa Standard Time) | INFO | app.log | Message: App launched on port 8081... | 
+Thu Aug 27 2020 10:08:12 GMT+0100 (West Africa Standard Time) | INFO | app.log | Message: App launched on port 8081... | 
+Thu Aug 27 2020 10:08:18 GMT+0100 (West Africa Standard Time) | INFO | app.log | Message: App launched on port 8081... | 
+Thu Aug 27 2020 10:08:22 GMT+0100 (West Africa Standard Time) | INFO | app.log | Message: Incoming request | data:{"method":"POST","url":"http://localhost:8081/test"} | 
+Thu Aug 27 2020 10:08:22 GMT+0100 (West Africa Standard Time) | INFO | app.log | Message: Request received at /test | data:{"email":"lollykrown@gmail.com","message":"testing tester"} | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:08:22 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Message: Name field is empty | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:08:22 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Message: Age field is empty | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:08:22 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Message: Gender field is empty | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:08:22 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Message: Error response | data:{"status":false} | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
+Thu Aug 27 2020 10:09:04 GMT+0100 (West Africa Standard Time) | INFO | app.log | Message: App launched on port 8081... | 
