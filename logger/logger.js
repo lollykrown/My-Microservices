@@ -1,5 +1,6 @@
 const debug = require('debug')('app:logger');
 const winston = require('winston')
+require('winston-mongodb');
 
 dateFormat = () => {
   return new Date(Date.now()).toString();
@@ -20,8 +21,16 @@ class Loggerservice {
         new winston.transports.Console(),
         new winston.transports.File({
           filename: `./log/${route}.log`,
-          // level: 'error'
-        })
+          //log only error messages into file
+          level: 'error'
+        }),
+        new winston.transports.MongoDb({
+          level: 'error',
+          db: process.env.Db
+        }),
+      ],
+      exceptionHandlers: [
+        new winston.transports.File({ filename: '/.log/exceptions.log' })
       ],
       format: winston.format.printf((info) => {
         ignorePrivate()
