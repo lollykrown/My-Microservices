@@ -1,7 +1,7 @@
 {
-  "name": "email-microservice",
+  "name": "error-handler-microservice",
   "version": "1.0.0",
-  "description": "microservice for sending emails",
+  "description": "microservice for handling errors",
   "main": "app.js",
   "scripts": {
     "start": "set DEBUG=app,app:* & nodemon app.js",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/lollykrown/My-Microservices.git"
   },
   "keywords": [
-    "email",
+    "error handler",
     "microservice",
     "api"
   ],
@@ -24,13 +24,8 @@
   "homepage": "https://github.com/lollykrown/My-Microservices#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "debug": "^4.1.1",
     "dotenv": "^8.2.0",
-    "email-validator": "^2.0.4",
     "express": "^4.17.1",
-    "mailgen": "^2.0.13",
-    "morgan": "^1.10.0",
-    "nodemailer": "^6.4.11",
     "nodemon": "^2.0.4"
   }
 }

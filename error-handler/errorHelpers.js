@@ -1,4 +1,4 @@
-const logRepo = require("../repos/logRepo");
+const logRepo = require("./logRepo");
 
 let errorHelpers = {
   logErrors: function (err, req, res, next) {
