@@ -3,12 +3,10 @@ const bodyParser = require('body-parser');
 const Logger = require('./logger');
 const morgan = require('morgan');
 require('dotenv').config()
-const LoggerC = require('./queryLogs');
 
 const app = express();
 
 const logger = new Logger('app_root');
-const logQ = new LoggerC();
 
 
 //using the logger and its configured transports, to save the logs created by Morgan
@@ -83,7 +81,7 @@ const options = {
   order: 'desc',
   fields: ['message']
 };
-logQ.query(options)
+
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development

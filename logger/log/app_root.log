@@ -37,3 +37,4 @@ INFO: Thu Aug 27 2020 15:09:24 GMT+0100 (West Africa Standard Time) | app_root.l
  | log_data:{"name":"","age":30,"gender":"Male"} |
 INFO: Thu Aug 27 2020 15:13:12 GMT+0100 (West Africa Standard Time) | app_root.log | Message: App launched on port 8081... | 
 INFO: Thu Aug 27 2020 15:13:59 GMT+0100 (West Africa Standard Time) | app_root.log | Message: App launched on port 8081... | 
+INFO: Thu Aug 27 2020 15:21:28 GMT+0100 (West Africa Standard Time) | app_root.log | Message: App launched on port 8081... | 
