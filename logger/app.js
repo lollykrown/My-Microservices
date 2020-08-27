@@ -1,6 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser');
 const Logger = require('./logger');
+const { allColors } = require('winston/lib/winston/config');
 
 
 require('dotenv').config()
@@ -12,26 +13,36 @@ const logger = new Logger('app');
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
+app.all('*', (req, res, next) => {
+  logger.info('Incoming request', { method: req.method})
+
+  logger.debug('Incoming request verbose', {
+    headers: req.headers.host,
+    query: req.query,
+    body: req.body
+  });
+  next();
+})
 
 app.post('/test', (req, res)=>{
-  const body = req.body
+  const {name, age, gender} = req.body
 
   let error = {}
 
-  logger.setLogData(body)
+  logger.setLogData(req.body)
 
   logger.info('Request received at /test', req.body)
 
-  if (body.name == null || body.name == '') {
-    logger.error('Name fild is empty')
-    error['name'] = 'Name fild is empty'
+  if (!name) {
+    logger.error('Name field is empty')
+    error['name'] = 'Name field is empty'
   }
-  if (body.age == null || body.age == '') {
-    logger.error('age fild is empty')
-    error['age'] = 'age fild is empty'
+  if (!age) {
+    logger.error('Age field is empty')
+    error['age'] = 'age field is empty'
   }
-  if (body.gender == null || body.gender == '') {
-    logger.error('gender fild is empty')
+  if (!gender) {
+    logger.error('gender field is empty')
     error['gender'] = 'gender fild is empty'
   }
 
@@ -52,5 +63,6 @@ app.post('/test', (req, res)=>{
 
 port = process.env.PORT
 app.listen(port, function () {
-  console.log(`Listening on port ${port}...`)
+  // console.log(`Listening on port ${port}...`)
+  logger.info(`App launched on port ${port}...`)
 }) 

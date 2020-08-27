@@ -5,6 +5,12 @@ dateFormat = () => {
   return new Date(Date.now()).toUTCString();
 }
 
+// Ignore log messages if they have { private: true }
+const ignorePrivate = winston.format((info, opts) => {
+  if (info.private) { return false; }
+  return info;
+});
+
 class Loggerservice {
   constructor(route) {
     this.log_data = null
@@ -13,17 +19,17 @@ class Loggerservice {
       transports: [
         new winston.transports.Console(),
         new winston.transports.File({
-          filename: `./log/${route}.log`
+          filename: `./log/${route}.log`,
+          // level: 'error'
         })
       ],
       format: winston.format.printf((info) => {
-        let message = `${dateFormat()} | ${info.level.toUpperCase()}
-        | ${route}.log | ${info.message} | `
+        ignorePrivate()
+        let message = `${dateFormat()} | ${info.level.toUpperCase()} | ${route}.log | ${info.message} | `
 
-        message = info.obj ? message + 
-        `data:${JSON.stringify(info.obj)} | ` : message
-        message = this.log_data ? message +
-        `log_data:${JSON.stringify(this.log_data)} |` : message
+        message = info.obj ? message + `data:${JSON.stringify(info.obj)} | ` : message
+        
+        message = this.log_data ? message + `log_data:${JSON.stringify(this.log_data)} |` : message
 
         return message
       })
