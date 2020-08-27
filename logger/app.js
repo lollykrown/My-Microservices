@@ -1,12 +1,21 @@
 const express = require('express')
 const bodyParser = require('body-parser');
 const Logger = require('./logger');
-
+const morgan = require('morgan');
 require('dotenv').config()
 
 const app = express();
 
 const logger = new Logger('app_root');
+
+//using the logger and its configured transports, to save the logs created by Morgan
+const myStream = {
+  write: (text) => {
+      logger.info(`From Morgan: ${text}`)
+  }
+}
+
+app.use(morgan('combined', { stream: myStream }));
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -33,7 +42,7 @@ app.post('/test', (req, res)=>{
   logger.info('Request received at /test', req.body)
 
   if (!name) {
-    logger.error('Name field is empty')
+    logger.error('Name field is empty', {msg: 'error from name input'})
     error['name'] = 'Name field is empty'
   }
   if (!age) {

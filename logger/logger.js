@@ -32,7 +32,7 @@ class Loggerservice {
         new winston.transports.File({
           filename: `./log/${route}.log`,
           //log only error messages into file
-          level: "error",
+          // level: "error",
         }),
         new winston.transports.MongoDB({
           level: "error",
@@ -46,22 +46,15 @@ class Loggerservice {
         }),
       ],
       rejectionHandlers: [
-        new winston.transports.File({ filename: "rejections.log" }),
+        new winston.transports.File({ filename: "/.log/rejections.log" }),
       ],
       exceptionHandlers: [
         new winston.transports.File({ filename: "/.log/exceptions.log" }),
       ],
       // exitOnError: false, //exits on error
-      query: winston.query(options, function (err, results) {
-        if (err) {
-          console.log(err);
-        } else {
-          console.log(results);
-        }
-      }),
-      format: winston.format.printf((info) => {
+      format: winston.format.printf((info, ...metadata) => {
         ignorePrivate();
-        let message = `${dateFormat()} | ${info.level.toUpperCase()} | ${route}.log | Message: ${
+        let message = `${info.level.toUpperCase()}: ${dateFormat()} | ${route}.log | Message: ${
           info.message
         } | `;
 
@@ -73,8 +66,21 @@ class Loggerservice {
           ? message + `log_data:${JSON.stringify(this.log_data)} |`
           : message;
 
+          if(metadata) {
+            message = info.metadata
+            ? message + `log_data:${JSON.stringify(info.metadata)} |`
+            : message;
+            }
+
         return message;
       }),
+      // query: winston.query(options, function (err, results) {
+      //   if (err) {
+      //     console.log(err);
+      //   } else {
+      //     console.log('results:', results);
+      //   }
+      // })
     });
     this.logger = logger;
   }
