@@ -10,18 +10,20 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.post("/test", (req, res) => {
   const { name, age, gender } = req.body;
-
-  if (!name) {
-    return res.status(400).json({
-      status: 400,
-      statusText: "Name not provided",
-      message: "Name param must be provided",
-      error: {
-        code: "NOT_FOUND",
-        message: "Name param must be provided",
-      }
-    });
-  }
+  console.log(name, age)
+  const nu = age + 6;
+  console.log(nu)
+  // if (!name) {
+  //   return res.status(400).json({
+  //     status: 400,
+  //     statusText: "Name not provided",
+  //     message: "Name param must be provided",
+  //     error: {
+  //       code: "NOT_FOUND",
+  //       message: "Name param must be provided",
+  //     }
+  //   });
+  // }
   if (!age) {
     return res.status(400).json({
       status: 400,
