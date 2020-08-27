@@ -34,3 +34,563 @@ TypeError: logger.query is not a function
     at Function.Module._load (internal/modules/cjs/loader.js:950:14)
     at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
     at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 10:57:21 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Cannot find module './lo'
+Require stack:
+- C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js
+Error: Cannot find module './lo'
+Require stack:
+- C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:1065:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:911:27)
+    at Module.require (internal/modules/cjs/loader.js:1125:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:63:15)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12) | 
+Thu Aug 27 2020 10:57:26 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Cannot find module './q'
+Require stack:
+- C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js
+Error: Cannot find module './q'
+Require stack:
+- C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:1065:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:911:27)
+    at Module.require (internal/modules/cjs/loader.js:1125:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:63:15)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12) | 
+Thu Aug 27 2020 10:57:33 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: logger is not defined
+ReferenceError: logger is not defined
+    at query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:14:3)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:63:37)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 10:57:43 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: logger is not defined
+ReferenceError: logger is not defined
+    at query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:14:3)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:64:1)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 10:57:45 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: logger is not defined
+ReferenceError: logger is not defined
+    at query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:14:3)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:64:1)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 10:57:58 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: logger is not defined
+ReferenceError: logger is not defined
+    at query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:15:3)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:64:1)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 10:58:13 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: logger is not defined
+ReferenceError: logger is not defined
+    at query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:15:3)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:64:1)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 10:58:16 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: logger is not defined
+ReferenceError: logger is not defined
+    at query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:16:3)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:64:1)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 10:59:05 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: wlogger is not defined
+ReferenceError: wlogger is not defined
+    at query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:16:3)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:64:1)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 10:59:09 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Cannot read property 'query' of undefined
+TypeError: Cannot read property 'query' of undefined
+    at query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:16:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:64:1)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:00:03 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Cannot read property 'query' of undefined
+TypeError: Cannot read property 'query' of undefined
+    at query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:16:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:64:1)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:00:47 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Cannot read property 'query' of undefined
+TypeError: Cannot read property 'query' of undefined
+    at query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:16:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:64:1)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:00:57 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Cannot read property 'query' of undefined
+TypeError: Cannot read property 'query' of undefined
+    at query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:16:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:64:1)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:02:34 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Cannot read property 'query' of undefined
+TypeError: Cannot read property 'query' of undefined
+    at query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:16:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:63:23)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:04:48 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Cannot read property 'query' of undefined
+TypeError: Cannot read property 'query' of undefined
+    at query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:16:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:64:1)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:04:52 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Identifier 'winston' has already been declared
+C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:31
+var winston = require('winston');
+    ^
+
+SyntaxError: Identifier 'winston' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:1152:16)
+    at Module._compile (internal/modules/cjs/loader.js:1200:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Module.require (internal/modules/cjs/loader.js:1125:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:63:15)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10) | 
+Thu Aug 27 2020 11:05:00 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Identifier 'winston' has already been declared
+C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:33
+var winston = require('winston');
+    ^
+
+SyntaxError: Identifier 'winston' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:1152:16)
+    at Module._compile (internal/modules/cjs/loader.js:1200:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Module.require (internal/modules/cjs/loader.js:1125:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:63:15)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10) | 
+Thu Aug 27 2020 11:05:04 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Identifier 'logFilename' has already been declared
+C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:31
+var logFilename = __dirname + '/log/2014-02-24.log';
+    ^
+
+SyntaxError: Identifier 'logFilename' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:1152:16)
+    at Module._compile (internal/modules/cjs/loader.js:1200:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Module.require (internal/modules/cjs/loader.js:1125:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:63:15)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10) | 
+Thu Aug 27 2020 11:05:21 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Invalid or unexpected token
+C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:2
+const logFilename = __dirname + '/app_root;
+                                ^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (internal/modules/cjs/loader.js:1152:16)
+    at Module._compile (internal/modules/cjs/loader.js:1200:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Module.require (internal/modules/cjs/loader.js:1125:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:63:15)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10) | 
+Thu Aug 27 2020 11:05:25 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Invalid or unexpected token
+C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:2
+const logFilename = __dirname + '/app_root.log;
+                                ^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (internal/modules/cjs/loader.js:1152:16)
+    at Module._compile (internal/modules/cjs/loader.js:1200:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Module.require (internal/modules/cjs/loader.js:1125:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:63:15)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10) | 
+Thu Aug 27 2020 11:05:33 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Invalid or unexpected token
+C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:2
+const logFilename = __dirname + '/app_root.log;
+                                ^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (internal/modules/cjs/loader.js:1152:16)
+    at Module._compile (internal/modules/cjs/loader.js:1200:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Module.require (internal/modules/cjs/loader.js:1125:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:63:15)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10) | 
+Thu Aug 27 2020 11:05:41 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Identifier 'winston' has already been declared
+C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:29
+var winston = require('winston');
+    ^
+
+SyntaxError: Identifier 'winston' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:1152:16)
+    at Module._compile (internal/modules/cjs/loader.js:1200:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Module.require (internal/modules/cjs/loader.js:1125:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:63:15)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10) | 
+Thu Aug 27 2020 11:05:52 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Identifier 'options' has already been declared
+C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:38
+var options = {
+    ^
+
+SyntaxError: Identifier 'options' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:1152:16)
+    at Module._compile (internal/modules/cjs/loader.js:1200:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Module.require (internal/modules/cjs/loader.js:1125:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:63:15)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10) | 
+Thu Aug 27 2020 11:05:58 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Identifier 'options' has already been declared
+C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:46
+var options = {
+    ^
+
+SyntaxError: Identifier 'options' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:1152:16)
+    at Module._compile (internal/modules/cjs/loader.js:1200:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Module.require (internal/modules/cjs/loader.js:1125:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:63:15)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10) | 
+Thu Aug 27 2020 11:06:01 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Identifier 'logger' has already been declared
+C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:37
+var logger = new (winston.Logger)({
+    ^
+
+SyntaxError: Identifier 'logger' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:1152:16)
+    at Module._compile (internal/modules/cjs/loader.js:1200:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Module.require (internal/modules/cjs/loader.js:1125:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:63:15)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10) | 
+Thu Aug 27 2020 11:06:26 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: Identifier 'logger' has already been declared
+C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:37
+var logger = new (winston.Logger)({
+    ^
+
+SyntaxError: Identifier 'logger' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:1152:16)
+    at Module._compile (internal/modules/cjs/loader.js:1200:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Module.require (internal/modules/cjs/loader.js:1125:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:63:15)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10) | 
+Thu Aug 27 2020 11:06:40 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: winston.Logger is not a constructor
+TypeError: winston.Logger is not a constructor
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\queryLogs.js:4:16)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Module.require (internal/modules/cjs/loader.js:1125:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:63:15)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10) | 
+Thu Aug 27 2020 11:09:33 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: port is not defined
+ReferenceError: port is not defined
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:76:12)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:09:39 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: unhandledRejection: options is not defined
+ReferenceError: options is not defined
+    at Loggerservice.query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\logger.js:61:19)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:72:8)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:09:43 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: unhandledRejection: options is not defined
+ReferenceError: options is not defined
+    at Loggerservice.query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\logger.js:61:19)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:72:8)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:09:54 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: unhandledRejection: options is not defined
+ReferenceError: options is not defined
+    at Loggerservice.query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\logger.js:61:19)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:72:8)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:09:57 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: unhandledRejection: options is not defined
+ReferenceError: options is not defined
+    at Loggerservice.query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\logger.js:61:19)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:72:8)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:10:06 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: unhandledRejection: options is not defined
+ReferenceError: options is not defined
+    at Loggerservice.query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\logger.js:61:19)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:72:8)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:10:15 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: unhandledRejection: options is not defined
+ReferenceError: options is not defined
+    at Loggerservice.query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\logger.js:61:19)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:72:8)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:10:18 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: unhandledRejection: options is not defined
+ReferenceError: options is not defined
+    at Loggerservice.query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\logger.js:61:19)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:72:8)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:10:21 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: unhandledRejection: options is not defined
+ReferenceError: options is not defined
+    at Loggerservice.query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\logger.js:61:19)
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:72:8)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:10:43 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: unhandledRejection: this.normalizeQuery is not a function
+TypeError: this.normalizeQuery is not a function
+    at exports.MongoDB.MongoDB.query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston-mongodb\lib\winston-mongodb.js:253:22)
+    at C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston-mongodb\lib\winston-mongodb.js:102:30
+    at Array.forEach (<anonymous>)
+    at processOpQueue (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston-mongodb\lib\winston-mongodb.js:101:19)
+    at C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston-mongodb\lib\winston-mongodb.js:92:7
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) | 
+Thu Aug 27 2020 11:11:27 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: unhandledRejection: this.normalizeQuery is not a function
+TypeError: this.normalizeQuery is not a function
+    at exports.MongoDB.MongoDB.query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston-mongodb\lib\winston-mongodb.js:253:22)
+    at C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston-mongodb\lib\winston-mongodb.js:102:30
+    at Array.forEach (<anonymous>)
+    at processOpQueue (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston-mongodb\lib\winston-mongodb.js:101:19)
+    at C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston-mongodb\lib\winston-mongodb.js:92:7
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) | 
+Thu Aug 27 2020 11:11:55 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: unhandledRejection: Cannot create property 'rows' on string 'query'
+TypeError: Cannot create property 'rows' on string 'query'
+    at normalizeQuery (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\transports\file.js:328:20)
+    at File.query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\transports\file.js:215:15)
+    at queryTransport (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\logger.js:441:17)
+    at addResults (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\logger.js:457:7)
+    at C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\internal\withoutIndex.js:8:40
+    at eachOfArrayLike (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\eachOf.js:61:9)
+    at eachOf (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\eachOf.js:112:12)
+    at awaitable (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\internal\awaitify.js:13:28)
+    at eachLimit (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\forEach.js:84:31)
+    at awaitable (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\internal\awaitify.js:13:28) | 
+Thu Aug 27 2020 11:12:07 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: logger.query is not a function
+TypeError: logger.query is not a function
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:73:8)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:12:11 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: unhandledRejection: Cannot create property 'rows' on string 'query'
+TypeError: Cannot create property 'rows' on string 'query'
+    at normalizeQuery (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\transports\file.js:328:20)
+    at File.query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\transports\file.js:215:15)
+    at queryTransport (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\logger.js:441:17)
+    at addResults (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\logger.js:457:7)
+    at C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\internal\withoutIndex.js:8:40
+    at eachOfArrayLike (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\eachOf.js:61:9)
+    at eachOf (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\eachOf.js:112:12)
+    at awaitable (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\internal\awaitify.js:13:28)
+    at eachLimit (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\forEach.js:84:31)
+    at awaitable (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\internal\awaitify.js:13:28) | 
+Thu Aug 27 2020 11:12:16 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: unhandledRejection: Cannot create property 'rows' on string 'query'
+TypeError: Cannot create property 'rows' on string 'query'
+    at normalizeQuery (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\transports\file.js:328:20)
+    at File.query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\transports\file.js:215:15)
+    at queryTransport (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\logger.js:441:17)
+    at addResults (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\logger.js:457:7)
+    at C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\internal\withoutIndex.js:8:40
+    at eachOfArrayLike (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\eachOf.js:61:9)
+    at eachOf (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\eachOf.js:112:12)
+    at awaitable (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\internal\awaitify.js:13:28)
+    at eachLimit (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\forEach.js:84:31)
+    at awaitable (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\internal\awaitify.js:13:28) | 
+Thu Aug 27 2020 11:12:36 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: unhandledRejection: Cannot create property 'rows' on string 'query'
+TypeError: Cannot create property 'rows' on string 'query'
+    at normalizeQuery (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\transports\file.js:328:20)
+    at File.query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\transports\file.js:215:15)
+    at queryTransport (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\logger.js:441:17)
+    at addResults (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\logger.js:457:7)
+    at C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\internal\withoutIndex.js:8:40
+    at eachOfArrayLike (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\eachOf.js:61:9)
+    at eachOf (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\eachOf.js:112:12)
+    at awaitable (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\internal\awaitify.js:13:28)
+    at eachLimit (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\forEach.js:84:31)
+    at awaitable (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\internal\awaitify.js:13:28) | 
+Thu Aug 27 2020 11:12:41 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: unhandledRejection: Cannot create property 'rows' on string 'query'
+TypeError: Cannot create property 'rows' on string 'query'
+    at normalizeQuery (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\transports\file.js:328:20)
+    at File.query (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\transports\file.js:215:15)
+    at queryTransport (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\logger.js:441:17)
+    at addResults (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\winston\lib\winston\logger.js:457:7)
+    at C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\internal\withoutIndex.js:8:40
+    at eachOfArrayLike (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\eachOf.js:61:9)
+    at eachOf (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\eachOf.js:112:12)
+    at awaitable (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\internal\awaitify.js:13:28)
+    at eachLimit (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\forEach.js:84:31)
+    at awaitable (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\node_modules\async\internal\awaitify.js:13:28) | 
+Thu Aug 27 2020 11:13:08 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: logger.query is not a function
+TypeError: logger.query is not a function
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:73:8)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:13:20 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: logger.query is not a function
+TypeError: logger.query is not a function
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:73:8)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:13:23 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: logger.query is not a function
+TypeError: logger.query is not a function
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:73:8)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 
+Thu Aug 27 2020 11:13:30 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: uncaughtException: logger.query is not a function
+TypeError: logger.query is not a function
+    at Object.<anonymous> (C:\Users\agboola_kayode\Documents\GitHub\My-Microservices\logger\app.js:73:8)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 | 

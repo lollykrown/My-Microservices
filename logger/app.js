@@ -1,8 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser');
 const Logger = require('./logger');
-const { allColors } = require('winston/lib/winston/config');
-
 
 require('dotenv').config()
 
@@ -63,6 +61,14 @@ app.post('/test', (req, res)=>{
 
 })
 
+const options = {
+  from: new Date() - (24 * 60 * 60 * 1000),
+  until: new Date(),
+  limit: 10,
+  start: 0,
+  order: 'desc',
+  fields: ['message']
+};
 
 port = process.env.PORT
 app.listen(port, function () {
