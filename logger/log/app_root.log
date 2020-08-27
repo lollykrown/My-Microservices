@@ -1,0 +1,5 @@
+Thu Aug 27 2020 10:45:38 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: Name field is empty | log_data:{"name":"","age":30,"gender":""} |
+Thu Aug 27 2020 10:45:38 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: Gender field is empty | log_data:{"name":"","age":30,"gender":""} |
+Thu Aug 27 2020 10:45:38 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: Error response | data:{"status":false,"message":"unsuccessful"} | log_data:{"name":"","age":30,"gender":""} |
+Thu Aug 27 2020 10:46:13 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: Gender field is empty | log_data:{"name":"Kayode","age":30,"gender":""} |
+Thu Aug 27 2020 10:46:13 GMT+0100 (West Africa Standard Time) | ERROR | app_root.log | Message: Error response | data:{"status":false,"message":"unsuccessful"} | log_data:{"name":"Kayode","age":30,"gender":""} |

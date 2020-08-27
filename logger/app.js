@@ -8,7 +8,7 @@ require('dotenv').config()
 
 const app = express();
 
-const logger = new Logger('app');
+const logger = new Logger('app_root');
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))

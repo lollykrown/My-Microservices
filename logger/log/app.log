@@ -1,4 +1,0 @@
-Thu Aug 27 2020 10:17:37 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Message: Name field is empty | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
-Thu Aug 27 2020 10:17:37 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Message: Age field is empty | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
-Thu Aug 27 2020 10:17:37 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Message: Gender field is empty | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |
-Thu Aug 27 2020 10:17:37 GMT+0100 (West Africa Standard Time) | ERROR | app.log | Message: Error response | data:{"status":false,"message":"unsuccessful"} | log_data:{"email":"lollykrown@gmail.com","message":"testing tester"} |

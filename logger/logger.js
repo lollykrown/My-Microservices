@@ -24,9 +24,15 @@ class Loggerservice {
           //log only error messages into file
           level: 'error'
         }),
-        new winston.transports.MongoDb({
+        new winston.transports.MongoDB({
           level: 'error',
-          db: process.env.Db
+          db: process.env.DB_URL,
+          options: { useUnifiedTopology: true },
+          storeHost: true,
+          collection: 'errors_log',
+          label: 'error documents',
+          // capped: true, // This sets the total limit of storage 10 10mb
+          expireAfterSeconds: 1000 * 60 * 60 * 24 * 3 //3days
         }),
       ],
       exceptionHandlers: [
