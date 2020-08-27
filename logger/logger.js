@@ -35,9 +35,13 @@ class Loggerservice {
           expireAfterSeconds: 1000 * 60 * 60 * 24 * 3 //3days
         }),
       ],
+      rejectionHandlers: [
+        new winston.transports.File({ filename: 'rejections.log' })
+      ],
       exceptionHandlers: [
         new winston.transports.File({ filename: '/.log/exceptions.log' })
       ],
+      // exitOnError: false, //exits on error
       format: winston.format.printf((info) => {
         ignorePrivate()
         let message = `${dateFormat()} | ${info.level.toUpperCase()} | ${route}.log | Message: ${info.message} | `
