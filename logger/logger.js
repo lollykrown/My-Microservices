@@ -74,13 +74,13 @@ class Loggerservice {
 
         return message;
       }),
-      // query: winston.query(options, function (err, results) {
-      //   if (err) {
-      //     console.log(err);
-      //   } else {
-      //     console.log('results:', results);
-      //   }
-      // })
+      query: winston.query(options, function (err, results) {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log('results:', results);
+        }
+      })
     });
     this.logger = logger;
   }

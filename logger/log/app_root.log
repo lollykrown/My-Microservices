@@ -13,3 +13,27 @@ ERROR: Thu Aug 27 2020 14:50:03 GMT+0100 (West Africa Standard Time) | app_root.
 ERROR: Thu Aug 27 2020 14:50:03 GMT+0100 (West Africa Standard Time) | app_root.log | Message: Error response | data:{"status":false,"message":"unsuccessful"} | log_data:{"name":"","age":30,"gender":"Male"} |
 INFO: Thu Aug 27 2020 14:50:03 GMT+0100 (West Africa Standard Time) | app_root.log | Message: From Morgan: {"remote_addr": "::1", "remote_user": "-", "date": "27/Aug/2020:13:50:03 +0000", "method": "POST", "url": "/test", "http_version": "1.1", "status": "200", "result_length": "5", "referrer": "-", "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36", "response_time": "56.625"}
  | log_data:{"name":"","age":30,"gender":"Male"} |
+INFO: Thu Aug 27 2020 14:59:00 GMT+0100 (West Africa Standard Time) | app_root.log | Message: App launched on port 8081... | 
+INFO: Thu Aug 27 2020 14:59:19 GMT+0100 (West Africa Standard Time) | app_root.log | Message: Incoming request | data:{"method":"POST","url":"http://localhost:8081/test"} | 
+INFO: Thu Aug 27 2020 14:59:19 GMT+0100 (West Africa Standard Time) | app_root.log | Message: Request received at /test | data:{"name":"","age":30,"gender":"Male"} | log_data:{"name":"","age":30,"gender":"Male"} |
+ERROR: Thu Aug 27 2020 14:59:19 GMT+0100 (West Africa Standard Time) | app_root.log | Message: Name field is empty | data:{"msg":"error from name input"} | log_data:{"name":"","age":30,"gender":"Male"} |
+ERROR: Thu Aug 27 2020 14:59:19 GMT+0100 (West Africa Standard Time) | app_root.log | Message: Error response | data:{"status":false,"message":"unsuccessful"} | log_data:{"name":"","age":30,"gender":"Male"} |
+INFO: Thu Aug 27 2020 14:59:19 GMT+0100 (West Africa Standard Time) | app_root.log | Message: From Morgan: {"remote_addr": "::1", "remote_user": "-", "date": "27/Aug/2020:13:59:19 +0000", "method": "POST", "url": "/test", "http_version": "1.1", "status": "200", "result_length": "5", "referrer": "-", "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36", "response_time": "85.388"}
+ | log_data:{"name":"","age":30,"gender":"Male"} |
+INFO: Thu Aug 27 2020 15:00:34 GMT+0100 (West Africa Standard Time) | app_root.log | Message: App launched on port 8081... | 
+INFO: Thu Aug 27 2020 15:00:41 GMT+0100 (West Africa Standard Time) | app_root.log | Message: App launched on port 8081... | 
+INFO: Thu Aug 27 2020 15:00:47 GMT+0100 (West Africa Standard Time) | app_root.log | Message: Incoming request | data:{"method":"POST","url":"http://localhost:8081/test"} | 
+INFO: Thu Aug 27 2020 15:00:47 GMT+0100 (West Africa Standard Time) | app_root.log | Message: Request received at /test | data:{"name":"","age":30,"gender":"Male"} | log_data:{"name":"","age":30,"gender":"Male"} |
+ERROR: Thu Aug 27 2020 15:00:47 GMT+0100 (West Africa Standard Time) | app_root.log | Message: Name field is empty | data:{"msg":"error from name input"} | log_data:{"name":"","age":30,"gender":"Male"} |
+ERROR: Thu Aug 27 2020 15:00:47 GMT+0100 (West Africa Standard Time) | app_root.log | Message: Error response | data:{"status":false,"message":"unsuccessful"} | log_data:{"name":"","age":30,"gender":"Male"} |
+INFO: Thu Aug 27 2020 15:00:47 GMT+0100 (West Africa Standard Time) | app_root.log | Message: From Morgan: {"remote_addr": "::1", "remote_user": "-", "date": "27/Aug/2020:14:00:47 +0000", "method": "POST", "url": "/test", "http_version": "1.1", "status": "200", "result_length": "5", "referrer": "-", "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36", "response_time": "60.982"}
+ | log_data:{"name":"","age":30,"gender":"Male"} |
+INFO: Thu Aug 27 2020 15:08:59 GMT+0100 (West Africa Standard Time) | app_root.log | Message: App launched on port 8081... | 
+INFO: Thu Aug 27 2020 15:09:24 GMT+0100 (West Africa Standard Time) | app_root.log | Message: Incoming request | data:{"method":"POST","url":"http://localhost:8081/test"} | 
+INFO: Thu Aug 27 2020 15:09:24 GMT+0100 (West Africa Standard Time) | app_root.log | Message: Request received at /test | data:{"name":"","age":30,"gender":"Male"} | log_data:{"name":"","age":30,"gender":"Male"} |
+ERROR: Thu Aug 27 2020 15:09:24 GMT+0100 (West Africa Standard Time) | app_root.log | Message: Name field is empty | data:{"msg":"error from name input"} | log_data:{"name":"","age":30,"gender":"Male"} |
+ERROR: Thu Aug 27 2020 15:09:24 GMT+0100 (West Africa Standard Time) | app_root.log | Message: Error response | data:{"status":false,"message":"unsuccessful"} | log_data:{"name":"","age":30,"gender":"Male"} |
+INFO: Thu Aug 27 2020 15:09:24 GMT+0100 (West Africa Standard Time) | app_root.log | Message: From Morgan: {"remote_addr": "::1", "remote_user": "-", "date": "27/Aug/2020:14:09:24 +0000", "method": "POST", "url": "/test", "http_version": "1.1", "status": "200", "result_length": "5", "referrer": "-", "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36", "response_time": "92.073"}
+ | log_data:{"name":"","age":30,"gender":"Male"} |
+INFO: Thu Aug 27 2020 15:13:12 GMT+0100 (West Africa Standard Time) | app_root.log | Message: App launched on port 8081... | 
+INFO: Thu Aug 27 2020 15:13:59 GMT+0100 (West Africa Standard Time) | app_root.log | Message: App launched on port 8081... | 

@@ -24,3 +24,32 @@ function query() {
   });
 }
 module.exports = query;
+
+
+// const Helpers = use('Helpers')
+// const Logger = use('Logger')
+// const Winston = Helpers.promisify(Logger._loggerInstances.file.driver.logger)
+
+// class LogController {
+	
+// 	async index({response, view}) {
+		
+// 		//lastday
+// 		const options = {
+// 			from: new Date() - (24 * 60 * 60 * 1000),
+// 			until: new Date(),
+// 			limit: 100,
+// 			start: 0,
+// 			order: 'desc',
+// 			fields: ['message']
+// 			};
+			
+// 			const result = await Winston.query(options)
+		  
+// 			console.log(result)
+// 			// return view.render('logs', {logs:result})
+// 			return response.send({logs:result})
+// 	}
+// }
+
+// module.exports = LogController
