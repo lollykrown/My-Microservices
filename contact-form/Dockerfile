@@ -1,13 +1,13 @@
-FROM node:14.6.0
+FROM node:10
 
-WORKDIR /email
+WORKDIR /contact-form
 
-ENV PORT 80
+ENV PORT 8081
 
-COPY package.json /email/package.json .
+COPY package.json /email/contact-form.json .
 
 RUN npm install
 
-COPY . /email
+COPY . /contact-form
 
-CMD ["node", "email/app.js"]
+CMD ["node", "contact-form/app.js"]
