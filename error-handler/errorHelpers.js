@@ -1,4 +1,5 @@
 const logRepo = require("./logRepo");
+const debug = require('debug')('app:Error-helpers')
 
 let errorHelpers = {
   logErrors: function (err, req, res, next) {
@@ -9,14 +10,15 @@ let errorHelpers = {
       "app": req.app,
     }
     logRepo.write(errorObject, function (data) {
-      console.log(data);
+      debug(data);
     }, function (err) {
-      console.error(err);
+      debug(err);
     });
     next(err)
   },
   clientErrorHandler: function (err, req, res, next) {
     if (req.xhr) {
+      debug('Internal Server Error')
       res.status(500).send({
         "status": 500,
         "statusText": "Internal Server Error",
@@ -36,6 +38,7 @@ let errorHelpers = {
     res.status(500).json(errorHelpers.errorBuilder(err));
   },
   errorBuilder: function (err) {
+    debug(err.message)
     return {
       "status": 500,
       "statusText": "Internal Server Error",
@@ -43,7 +46,7 @@ let errorHelpers = {
       "error": {
         "errno": err.errno,
         "call": err.syscall,
-        "code": err.code || "INTERNAL_SERVER_ERROR",
+        "code": "INTERNAL_SERVER_ERROR",
         "message": err.message
       }
     };

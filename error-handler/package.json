@@ -4,7 +4,7 @@
   "description": "microservice for handling errors",
   "main": "app.js",
   "scripts": {
-    "start": "set DEBUG=app,app:* & nodemon app.js",
+    "start": "set DEBUG=Error-helper,app:* & nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/lollykrown/My-Microservices#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "debug": "^4.1.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "nodemon": "^2.0.4"

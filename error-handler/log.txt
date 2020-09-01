@@ -1,0 +1,24 @@
+********************************************************************************
+Date/Time: Tue Sep 01 2020 20:43:21 GMT+0100 (West Africa Standard Time)
+Exception Info: {"status":500,"statusText":"Internal Server Error","message":"Unexpected token ' in JSON at position 28","error":{"code":"INTERNAL_SERVER_ERROR","message":"Unexpected token ' in JSON at position 28"},"requestInfo":{"hostname":"localhost","path":"/test"}}
+********************************************************************************
+********************************************************************************
+Date/Time: Tue Sep 01 2020 20:45:49 GMT+0100 (West Africa Standard Time)
+Exception Info: {"status":500,"statusText":"Internal Server Error","message":"Unexpected token ' in JSON at position 28","error":{"code":"INTERNAL_SERVER_ERROR","message":"Unexpected token ' in JSON at position 28"},"requestInfo":{"hostname":"localhost","path":"/test"}}
+********************************************************************************
+********************************************************************************
+Date/Time: Tue Sep 01 2020 20:46:25 GMT+0100 (West Africa Standard Time)
+Exception Info: {"status":500,"statusText":"Internal Server Error","message":"Unexpected token ' in JSON at position 28","error":{"code":"INTERNAL_SERVER_ERROR","message":"Unexpected token ' in JSON at position 28"},"requestInfo":{"hostname":"localhost","path":"/test"}}
+********************************************************************************
+********************************************************************************
+Date/Time: Tue Sep 01 2020 20:47:24 GMT+0100 (West Africa Standard Time)
+Exception Info: {"status":500,"statusText":"Internal Server Error","message":"Unexpected token ' in JSON at position 28","error":{"code":"INTERNAL_SERVER_ERROR","message":"Unexpected token ' in JSON at position 28"},"requestInfo":{"hostname":"localhost","path":"/test"}}
+********************************************************************************
+********************************************************************************
+Date/Time: Tue Sep 01 2020 20:47:44 GMT+0100 (West Africa Standard Time)
+Exception Info: {"status":500,"statusText":"Internal Server Error","message":"Unexpected token ' in JSON at position 28","error":{"code":"INTERNAL_SERVER_ERROR","message":"Unexpected token ' in JSON at position 28"},"requestInfo":{"hostname":"localhost","path":"/test"}}
+********************************************************************************
+********************************************************************************
+Date/Time: Tue Sep 01 2020 20:47:57 GMT+0100 (West Africa Standard Time)
+Exception Info: {"status":500,"statusText":"Internal Server Error","message":"await is not defined","error":{"code":"INTERNAL_SERVER_ERROR","message":"await is not defined"},"requestInfo":{"hostname":"localhost","path":"/test"}}
+********************************************************************************
