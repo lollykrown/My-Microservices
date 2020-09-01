@@ -16,7 +16,7 @@ app.post("/test", (req, res) => {
   const { name, age, gender } = req.body;
 
   //intentional erron on next line
-  const yu = await (fetch('url'))
+  const yu = fetch('url')
 
   if (!name) {
     return res.status(400).json({
