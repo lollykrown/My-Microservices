@@ -38,3 +38,7 @@ INFO: Thu Aug 27 2020 15:09:24 GMT+0100 (West Africa Standard Time) | app_root.l
 INFO: Thu Aug 27 2020 15:13:12 GMT+0100 (West Africa Standard Time) | app_root.log | Message: App launched on port 8081... | 
 INFO: Thu Aug 27 2020 15:13:59 GMT+0100 (West Africa Standard Time) | app_root.log | Message: App launched on port 8081... | 
 INFO: Thu Aug 27 2020 15:21:28 GMT+0100 (West Africa Standard Time) | app_root.log | Message: App launched on port 8081... | 
+INFO: Tue Sep 01 2020 11:42:48 GMT+0100 (West Africa Standard Time) | app_root.log | Message: App launched on port 8081... | 
+INFO: Tue Sep 01 2020 11:47:17 GMT+0100 (West Africa Standard Time) | app_root.log | Message: Incoming request | data:{"method":"GET","url":"http://localhost:8081/"} | 
+INFO: Tue Sep 01 2020 11:47:17 GMT+0100 (West Africa Standard Time) | app_root.log | Message: From Morgan: {"remote_addr": "::1", "remote_user": "-", "date": "01/Sep/2020:10:47:17 +0000", "method": "GET", "url": "/", "http_version": "1.1", "status": "404", "result_length": "139", "referrer": "-", "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36", "response_time": "6.633"}
+ | 

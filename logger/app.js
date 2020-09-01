@@ -34,7 +34,9 @@ app.all('*', (req, res, next) => {
   });
   next();
 })
-
+app.get('/', (req, res) => {
+  res.send('Hello world!')
+})
 app.post('/test', (req, res)=>{
   const {name, age, gender} = req.body
 
