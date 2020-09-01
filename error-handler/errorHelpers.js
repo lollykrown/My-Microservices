@@ -43,7 +43,7 @@ let errorHelpers = {
       "error": {
         "errno": err.errno,
         "call": err.syscall,
-        "code": "INTERNAL_SERVER_ERROR",
+        "code": err.code || "INTERNAL_SERVER_ERROR",
         "message": err.message
       }
     };

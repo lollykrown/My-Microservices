@@ -1,0 +1,16 @@
+********************************************************************************
+Date/Time: 9/1/2020
+Exception Info: {"status":500,"statusText":"Internal Server Error","message":"fetch is not defined","error":{"code":"INTERNAL_SERVER_ERROR","message":"fetch is not defined"},"requestInfo":{"hostname":"localhost","path":"/test"}}
+********************************************************************************
+********************************************************************************
+Date/Time: 9/1/2020
+Exception Info: {"status":500,"statusText":"Internal Server Error","message":"fetch is not defined","error":{"code":"INTERNAL_SERVER_ERROR","message":"fetch is not defined"},"requestInfo":{"hostname":"localhost","path":"/test"}}
+********************************************************************************
+********************************************************************************
+Date/Time: Tue Sep 01 2020 19:54:42 GMT+0100 (West Africa Standard Time)
+Exception Info: {"status":500,"statusText":"Internal Server Error","message":"fetch is not defined","error":{"code":"INTERNAL_SERVER_ERROR","message":"fetch is not defined"},"requestInfo":{"hostname":"localhost","path":"/test"}}
+********************************************************************************
+********************************************************************************
+Date/Time: Tue Sep 01 2020 19:55:15 GMT+0100 (West Africa Standard Time)
+Exception Info: {"status":500,"statusText":"Internal Server Error","message":"await is not defined","error":{"code":"INTERNAL_SERVER_ERROR","message":"await is not defined"},"requestInfo":{"hostname":"localhost","path":"/test"}}
+********************************************************************************
