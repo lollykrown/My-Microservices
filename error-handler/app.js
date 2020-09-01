@@ -14,9 +14,7 @@ app.get("/", (req, res) => {
 
 app.post("/test", (req, res) => {
   const { name, age, gender } = req.body;
-  const nu = age + 6;
   const yu = await (fetch('url'))
-  console.log(nu)
   if (!name) {
     return res.status(400).json({
       status: 400,
