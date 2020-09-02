@@ -1,6 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 let errorHelper = require("./errorHelpers");
+const nodemailer = require('nodemailer')
+
 require("dotenv").config();
 
 const app = express();
@@ -64,6 +66,29 @@ app.use(errorHelper.logErrors);
 app.use(errorHelper.clientErrorHandler);
 // Configure catch-all exception middleware last
 app.use(errorHelper.errorHandler);
+
+const transport = nodemailer.createTransport('SMTP', { // [1]
+  service: "Gmail",
+  auth: {
+    user: process.env.USER,
+    pass: process.env.PASSWORD
+  }
+})
+
+if (process.env.NODE_ENV === 'production') { // [2]
+  process.on('uncaughtException', function (er) {
+    console.error(er.stack) // [3]
+    transport.sendMail({
+      from: process.env.USER,
+      to: 'joe_kayu@yahoo.com',
+      subject: er.message,
+      text: er.stack // [4]
+    }, function (er) {
+       if (er) console.error(er)
+       process.exit(1) // [5]
+    })
+  })
+}
 
 port = process.env.PORT;
 app.listen(port, function () {
