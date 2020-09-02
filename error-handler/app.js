@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 app.post("/test", (req, res) => {
   const { name, age, gender } = req.body;
 
-  //intentional error on next line to trigger error response
+  //intentional error on next line to trigger an error
   const yu = fetch('url')
 
   if (!name) {

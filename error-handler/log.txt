@@ -1,12 +1,4 @@
-********************************************************************************
-Date/Time: Tue Sep 01 2020 21:15:56 GMT+0100 (West Africa Standard Time) 
+************************************************************************************************************************************************************************************************************************************** 
+Date/Time: Wed Sep 02 2020 08:58:24 GMT+0100 (West Africa Standard Time) 
 Exception Info: {"status":500,"statusText":"Internal Server Error","message":"fetch is not defined","error":{"code":"INTERNAL_SERVER_ERROR","message":"fetch is not defined"},"requestInfo":{"hostname":"localhost","path":"/test"}} 
-******************************************************************************** 
-****************************************************************************************** 
-Date/Time: Tue Sep 01 2020 21:16:50 GMT+0100 (West Africa Standard Time) 
-Exception Info: {"status":500,"statusText":"Internal Server Error","message":"fetch is not defined","error":{"code":"INTERNAL_SERVER_ERROR","message":"fetch is not defined"},"requestInfo":{"hostname":"localhost","path":"/test"}} 
-****************************************************************************************** 
-****************************************************************************************************************************************************** 
-Date/Time: Tue Sep 01 2020 21:17:11 GMT+0100 (West Africa Standard Time) 
-Exception Info: {"status":500,"statusText":"Internal Server Error","message":"fetch is not defined","error":{"code":"INTERNAL_SERVER_ERROR","message":"fetch is not defined"},"requestInfo":{"hostname":"localhost","path":"/test"}} 
-****************************************************************************************************************************************************** 
+************************************************************************************************************************************************************************************************************************************** 

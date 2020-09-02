@@ -18,7 +18,6 @@ let errorHelpers = {
   },
   clientErrorHandler: function (err, req, res, next) {
     if (req.xhr) {
-      debug('Internal Server Error')
       res.status(500).send({
         "status": 500,
         "statusText": "Internal Server Error",
