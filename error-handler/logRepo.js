@@ -17,9 +17,9 @@ let logRepo = {
       }
     });
   },
-  writeJson: function (da, resolve, reject) {
+  writeJson: function (file_name, da, resolve, reject) {
     let data = JSON.stringify(da);
-    fs.appendFile('access_data.json', data, function (err) {
+    fs.appendFile(file_name, data, function (err) {
       if (err) {
         reject(err);
       }

@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 let errorHelper = require("./errorHelpers");
 const nodemailer = require("nodemailer");
-const accessories = require("./accessories.json");
+const be = require("./spotify_songs.json");
 const debug = require("debug")("app:root");
 const logRepo = require("./logRepo");
 
@@ -66,41 +66,30 @@ app.post("/test", (req, res) => {
 app.get("/read-file", (req, res) => {
   (async function auth() {
     try {
-      const newArr = await accessories.map((item) => {
-        if (item.brand && item.brand_url) {
+      const newArr = await be.map((item) => {
           return (item = {
-            category: item.category,
-            subcategory: item.subcategory,
-            name: item.name,
-            price: item.current_price,
-            originalPrice: item.raw_price,
-            discount: item.discount,
-            currency: item.currency,
-            likesCount: item.likes_count,
-            company: item.brand,
-            brandUrl: item.brand_url,
-            colors: [item.variation_0_color, item.variation_1_color],
-            imgUrls: [
-              item.variation_0_thumbnail,
-              item.variation_0_image,
-              item.variation_1_thumbnail,
-              item.variation_1_image,
-              item.image_url,
-            ],
-            url: item.url,
-            id: item.id,
-            model: item.model,
+            category: 'music',
+            subcategory: item.playlist_name,
+            title: item.track_name,
+            artist: item.artist_name,
+            album: item.album_name,
+            keyMode: item.key_mode,
+            durationMs: item.duration_ms,
+            imgUrls: item.playlist_img,
+            albumImg: item.album_img,
+            id: item.FIELD1,
+            trackUri: item.track_uri,
             inCart: false,
             count: 0,
             total: 0,
           });
-        }
       });
 
       const filtered = await newArr.filter(function (el) {
         return el != null;
       });
-      logRepo.writeJson(filtered, function (data) {
+
+      logRepo.writeJson('data/spotify_songs.json',filtered, function (data) {
           debug(data);
         },
         function (err) {
@@ -110,7 +99,7 @@ app.get("/read-file", (req, res) => {
       res.status(200).json({
         status: true,
         message: "success",
-        data: filtered,
+        data: be,
       });
     } catch (err) {
       debug(err.stack);
