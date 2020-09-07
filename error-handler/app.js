@@ -66,30 +66,13 @@ app.post("/test", (req, res) => {
 app.get("/read-file", (req, res) => {
   (async function auth() {
     try {
-      const newArr = await be.map((item) => {
-          return (item = {
-            category: 'music',
-            subcategory: item.playlist_name,
-            title: item.track_name,
-            artist: item.artist_name,
-            album: item.album_name,
-            keyMode: item.key_mode,
-            durationMs: item.duration_ms,
-            imgUrls: item.playlist_img,
-            albumImg: item.album_img,
-            id: item.FIELD1,
-            trackUri: item.track_uri,
-            inCart: false,
-            count: 0,
-            total: 0,
-          });
-      });
+      const newArr = []
+      for(let i of be) {
+        newArr.push(i)
+      }
 
-      const filtered = await newArr.filter(function (el) {
-        return el != null;
-      });
 
-      logRepo.writeJson('data/spotify_songs.json',filtered, function (data) {
+      logRepo.writeJson('data/spotify_songs.js',newArr, function (data) {
           debug(data);
         },
         function (err) {
@@ -99,7 +82,6 @@ app.get("/read-file", (req, res) => {
       res.status(200).json({
         status: true,
         message: "success",
-        data: be,
       });
     } catch (err) {
       debug(err.stack);

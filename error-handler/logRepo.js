@@ -27,6 +27,17 @@ let logRepo = {
         resolve(true);
       }
     });
+  },
+  writeJs: function (file_name, da, resolve, reject) {
+    let data = JSON.stringify(da);
+    fs.writeFile(file_name, data, 'utf8',{ flag: "wx" }, function(err) {
+      if (err) {
+        reject(err);
+      }
+      else {
+        resolve(true);
+      }
+    });
   }
 };
 
