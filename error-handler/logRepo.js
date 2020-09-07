@@ -16,6 +16,17 @@ let logRepo = {
         resolve(true);
       }
     });
+  },
+  writeJson: function (da, resolve, reject) {
+    let data = JSON.stringify(da);
+    fs.appendFile('access_data.json', data, function (err) {
+      if (err) {
+        reject(err);
+      }
+      else {
+        resolve(true);
+      }
+    });
   }
 };
 
