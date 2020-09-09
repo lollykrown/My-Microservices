@@ -1,7 +1,7 @@
 {
-  "name": "email-microservice",
+  "name": "cache-microservice",
   "version": "1.0.0",
-  "description": "microservice for sending emails",
+  "description": "microservice for caching requests",
   "main": "app.js",
   "scripts": {
     "start": "set DEBUG=app,app:* & nodemon app.js",
