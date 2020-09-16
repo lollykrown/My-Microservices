@@ -16,7 +16,9 @@ app.post('/test', (req, res)=>{
   const sampleMessage = `Welcome to Parkwella! Your verification code is ${smsToken}`;
   const samplePhone = '07032460830'
 
-  sendSms(samplePhone, sampleMessage)
+  sendSms(samplePhone, sampleMessage);
+
+  res.send('message sent')
 
 })
 
