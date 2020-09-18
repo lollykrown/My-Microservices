@@ -1,12 +1,4 @@
-const puppeteer = require("puppeteer");
-
-(async () => {
-  try {
-    const browser = await puppeteer.launch();
-    const page = await browser.newPage();
-
-    const html  = 
-`<!doctype html>
+<!doctype html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width" />
@@ -171,10 +163,10 @@ const puppeteer = require("puppeteer");
       }
         .btn a {
           background-color: #ffffff;
-          border: solid 2px #3498db;
+          border: solid 1px #3498db;
           border-radius: 5px;
           box-sizing: border-box;
-          color: #0018f9;
+          color: #3498db;
           cursor: pointer;
           display: inline-block;
           font-size: 14px;
@@ -366,7 +358,7 @@ const puppeteer = require("puppeteer");
                                 <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                                   <tbody>
                                     <tr>
-                                      <td> <a href="http://lollykrown.xyz" target="_blank">Call To Action</a> </td>
+                                      <td> <a href="http://htmlemail.io" target="_blank">Call To Action</a> </td>
                                     </tr>
                                   </tbody>
                                 </table>
@@ -391,13 +383,13 @@ const puppeteer = require("puppeteer");
               <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 <tr>
                   <td class="content-block">
-                    <span class="apple-link">Lollykrown inc. Gbagada, Lagos, Nigeria</span>
+                    <span class="apple-link">Company Inc, 3 Abbey Road, San Francisco CA 94102</span>
                     <br> Don't like these emails? <a href="http://i.imgur.com/CScmqnj.gif">Unsubscribe</a>.
                   </td>
                 </tr>
                 <tr>
                   <td class="content-block powered-by">
-                    Powered by <a href="http://lollykrown.xyz">HTMLemail</a>.
+                    Powered by <a href="http://htmlemail.io">HTMLemail</a>.
                   </td>
                 </tr>
               </table>
@@ -411,84 +403,3 @@ const puppeteer = require("puppeteer");
     </table>
   </body>
 </html>
-`
-
-    //   // Set your page viewport
-    //   await page.setViewport({width:1280, height:800})
-    //   waityntil waits until all css, js imgs files are loaded
-    //   await page.goto('https://carmalou.com', {waitUntil: "networkidle2"});
-
-    //   // Get page screenshot
-    //   await page.screenshot({path: 'carmalou.png', fullPage:true});
-
-    //   //Get pdf of a page
-    //   await page.pdf({path: 'carmalou.pdf', format: 'A4'});
-
-      //write an html doc that is not from the web to pdf pdf of a page
-    //   const html = '<h1>Hello from puppeteer</h1>';
-      await page.setContent(html)
-
-      await page.pdf({path: 'kayode.pdf', format: 'letter',
-         margin: {
-                top:'1in',
-                bottom: '1in',
-                left: '1in',
-                right: '1in'
-           }
-      });
-
-    //  //Get the "viewport" of the page, as reported by the page.
-    //   const dimensions = await page.evaluate(() => {
-    //     return {
-    //       width: document.documentElement.clientWidth,
-    //       height: document.documentElement.clientHeight,
-    //       deviceScaleFactor: window.devicePixelRatio
-    //     };
-    //   });
-    //   console.log('Dimensions:', dimensions);
-
-    // const html = await page.content()
-    // console.log(html)
-
-    // Get github repositories
-    // await page.goto("https://github.com/lollykrown?tab=repositories", {
-    //   waitUntil: "networkidle2",
-    // });
-    // await page.waitForSelector("#user-repositories-list li");
-
-    // const temp = await page.evaluate(() => {
-    //   const repoLinks = "#user-repositories-list li h3 a";
-    //   const repos = document.querySelectorAll(repoLinks);
-    //   return Array.from(repos).map((repo) => {
-    //     return repo.href;
-    //   });
-    // });
-    // console.log(temp);
-    // await temp.screenshot({ path: "repos.png", fullPage: true });
-
-    // //Try to get car make by plate No
-    // await page.goto('https://nvis.frsc.gov.ng/VehicleManagement/VerifyPlateNo', {waitUntil: "networkidle2"});
-    // const input = document.querySelector("input.form-control");
-    // const button = document.querySelector("button.find-car");
-    // const plateNo = 'gge123cy'
-   
-    // await page.focus(input)
-    // await page.keyboard.type(plateNo)
-    // await page.click(button)
-
-    // let spanRes = []
-    // let vehicleMake, vehicleColor;
-    //  const spans = document.querySelectorAll('span');
-    //  await page.waitForSelector(spans)
-    //   await Array.from(spans).map((span) => {
-    //     spanRes.push(span.innerText)
-    //   });
-
-    //   console.log(spanRes)
-    // // await page.waitForSelector()
-
-    await browser.close();
-  } catch (error) {
-    console.log(error.stack);
-  }
-})();
