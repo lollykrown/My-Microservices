@@ -40,10 +40,11 @@ const patterns = {
     telephone: /^[0][7-9][0-1][\d]{8}$/ || /^[+234][7-9][0-1][\d]{8}$/,
     email: /^([a-z\d_\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
     password: /^[\w@-]{8,20}/,
-    slug: /^[a-z\d-]{8,20}/
+    slug: /^[a-z\d-]{8,20}/,
+    website: /^([www])\.([a-z]+)\.([a-z]+)/
 }
 
-
+//|https:\/\/www|https:\/\/
 function validate(field, regex){
     console.log(regex.test(field.value))
     if(regex.test(field.value)){
