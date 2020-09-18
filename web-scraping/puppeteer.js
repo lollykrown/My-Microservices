@@ -426,6 +426,8 @@ const puppeteer = require("puppeteer");
 
       //write an html doc that is not from the web to pdf pdf of a page
     //   const html = '<h1>Hello from puppeteer</h1>';
+    const text = `This is me testing if non html content would work
+    and it did`;
       await page.setContent(html)
 
       await page.pdf({path: 'kayode.pdf', format: 'letter',
