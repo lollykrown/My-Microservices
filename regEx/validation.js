@@ -34,6 +34,9 @@
 //Let's get started
 const inputs = document.querySelectorAll('input');
 
+const moneyCommas = (x) => {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g)
+}
 
 const patterns = {
     username: /^[a-z\d]{5,12}$/i,

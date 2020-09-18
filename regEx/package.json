@@ -1,0 +1,18 @@
+{
+  "name": "logger",
+  "version": "1.0.0",
+  "description": "validations microservice",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "share": "lt --port 8081",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "logger"
+  ],
+  "author": "Kayode Agboola",
+  "license": "ISC",
+  "dependencies": {
+  }
+}

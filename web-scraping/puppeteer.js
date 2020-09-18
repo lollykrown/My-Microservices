@@ -424,10 +424,10 @@ const puppeteer = require("puppeteer");
     //   //Get pdf of a page
     //   await page.pdf({path: 'carmalou.pdf', format: 'A4'});
 
-      //write an html doc that is not from the web to pdf pdf of a page
-    //   const html = '<h1>Hello from puppeteer</h1>';
-    const text = `This is me testing if non html content would work
-    and it did`;
+    //  write an html doc that is not from the web to pdf pdf of a page
+    //  const html = '<h1>Hello from puppeteer</h1>';
+    //  const text = `This is me testing if non html content would work
+    //  and it did`;
       await page.setContent(html)
 
       await page.pdf({path: 'kayode.pdf', format: 'letter',
@@ -468,8 +468,10 @@ const puppeteer = require("puppeteer");
     // console.log(temp);
     // await temp.screenshot({ path: "repos.png", fullPage: true });
 
-    // //Try to get car make by plate No
+    //Try to get car make by plate No
     // await page.goto('https://nvis.frsc.gov.ng/VehicleManagement/VerifyPlateNo', {waitUntil: "networkidle2"});
+    // await page.screenshot({path: 'frsc.png', fullPage:true});
+
     // const input = document.querySelector("input.form-control");
     // const button = document.querySelector("button.find-car");
     // const plateNo = 'gge123cy'
@@ -487,7 +489,7 @@ const puppeteer = require("puppeteer");
     //   });
 
     //   console.log(spanRes)
-    // // await page.waitForSelector()
+    // await page.waitForSelector()
 
     await browser.close();
   } catch (error) {
