@@ -428,16 +428,16 @@ const puppeteer = require("puppeteer");
     //  const html = '<h1>Hello from puppeteer</h1>';
     //  const text = `This is me testing if non html content would work
     //  and it did`;
-      await page.setContent(html)
+      // await page.setContent(html)
 
-      await page.pdf({path: 'kayode.pdf', format: 'letter',
-         margin: {
-                top:'1in',
-                bottom: '1in',
-                left: '1in',
-                right: '1in'
-           }
-      });
+      // await page.pdf({path: 'kayode.pdf', format: 'letter',
+      //    margin: {
+      //           top:'1in',
+      //           bottom: '1in',
+      //           left: '1in',
+      //           right: '1in'
+      //      }
+      // });
 
     //  //Get the "viewport" of the page, as reported by the page.
     //   const dimensions = await page.evaluate(() => {
@@ -470,7 +470,9 @@ const puppeteer = require("puppeteer");
 
     //Try to get car make by plate No
     // await page.goto('https://nvis.frsc.gov.ng/VehicleManagement/VerifyPlateNo', {waitUntil: "networkidle2"});
-    // await page.screenshot({path: 'frsc.png', fullPage:true});
+    await page.goto('https://lollykrown.netlify.app', {waitUntil: "networkidle2"});
+
+    await page.screenshot({path: 'portfolio.png', fullPage:true});
 
     // const input = document.querySelector("input.form-control");
     // const button = document.querySelector("button.find-car");
