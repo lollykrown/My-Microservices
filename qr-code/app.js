@@ -3,6 +3,9 @@ const express = require("express");
 const debug = require("debug")("app:root");
 const bobyParser = require("body-parser");
 const QRCode = require("qrcode");
+const QRReader = require("qrcode-reader");
+const fs = require("fs");
+const jimp = require("jimp");
 
 // init app
 const app = express();
@@ -26,7 +29,7 @@ app.post("/", (req, res) => {
       debug(err);
     }
     debug("url", url);
-    
+
     QRCode.toFile(
       "test.png",
       name,
@@ -49,15 +52,50 @@ app.post("/", (req, res) => {
   //     if (err) { debug(err)}
   //   debug('text', text);
   //   })
-  // QRCode.toFile('test.png', name, {
-
-  //   }, function (err) {
-  //     if (err) throw err
-  //     console.log('done')
-  //     res.send('success')
-  //   })
 });
 
+app.get("/decode", (req, res) => {
+  (async function run() {
+    try {
+      const img = await jimp.read(fs.readFileSync("./test.png"));
+
+    //   for (const point of value.points) {
+    //     img.scan(Math.floor(point.x) - 5, Math.floor(point.y) - 5, 10, 10, function(x, y, idx) {
+    //       // Modify the RGBA of all pixels in a 10px by 10px square around the 'FinderPattern'
+    //       this.bitmap.data[idx] = 255; // Set red to 255
+    //       this.bitmap.data[idx + 1] = 0; // Set blue to 0
+    //       this.bitmap.data[idx + 2] = 0; // Set green to 0
+    //       this.bitmap.data[idx + 3] = 255; // Set alpha to 255
+    //     });
+    //   }
+      
+    //   await img.writeAsync('./qr_photo_annotated.png');
+
+      const qr = new QRReader();
+
+      // qrcode-reader's API doesn't support promises, so wrap it
+      const value = await new Promise((resolve, reject) => {
+        qr.callback = (err, v) => (err != null ? reject(err) : resolve(v));
+        qr.decode(img.bitmap);
+      });
+
+      // { result: 'http://asyncawait.net',
+      //   points:
+      //     [ FinderPattern {
+      //         x: 68.5,
+      //         y: 252,
+      //         count: 10,
+      // ...
+      debug('val',value);
+
+      // http://asyncawait.net
+      debug('res',value.result);
+      res.send(value.result);
+    } catch (e) {
+      debug('error', e.stack);
+    }
+  })();
+});
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
   next(createError(404));
