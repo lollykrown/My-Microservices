@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "sms"
+    "QR Code"
   ],
   "author": "Kayode Agboola",
   "license": "ISC",
