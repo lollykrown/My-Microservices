@@ -1,39 +1,36 @@
 const express = require('express')
-const bodyParser = require('body-parser');
-require('dotenv').config()
-const sendSms = require('./sms')
+const http = require('http')
+const socketio = require('socket.io')
+const path = require('path');
+
 const app = express();
+const server = http.createServer(app)
+const io = socketio(server)
 
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(express.static(path.join(__dirname, 'public')))
 
-app.get('/', (req, res) => {
-  res.send('Hello world!')
+//runs when client connects
+io.on('connection', socket => {
+  console.log('New connection');
+
+  // this emits to a single client
+  // Welcome new user
+  socket.emit('message', 'Welcome to Chat app')
+
+  //broadcast when a user connects, broadcast emits to everyone except the sender
+  //io.emit is to everyone with no exception, socket.emit is to a single user
+  socket.broadcast.emit('message', 'A user just joined the chat')
+
+
+  //Runs when client disconnects
+  socket.on('disconnect', () => {
+    io.emit('message', 'A user just left the chat')
+  })
 })
-app.post('/test', (req, res)=>{
-  const {phone, message} = req.body
 
-  const sampleMessage = `Welcome to Parkwella! Your verification code is ${smsToken}`;
-  const samplePhone = '07032460830'
 
-  sendSms(samplePhone, sampleMessage);
+port = process.env.PORT || 4000
 
-  res.send('message sent')
-
-})
-
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
-  res.status(err.status || 500);
-  res.send('error');
-});
-
-port = process.env.PORT
-app.listen(port, function () {
+server.listen(port, function () {
   console.log(`Listening on port ${port}...`)
 }) 
