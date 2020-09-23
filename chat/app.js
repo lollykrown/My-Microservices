@@ -16,14 +16,14 @@ const io = socketio(server);
 
 app.use(express.static(path.join(__dirname, "public")));
 
-//runs when client connects
+// Runs when client connects
 io.on("connection", (socket) => {
   socket.on("joinRoom", ({ username, room }) => {
     const user = userJoin(socket.id, username, room);
 
     socket.join(user.room);
 
-    // this emits to a single client
+    // This emits to a single client
     // Welcome new user
     socket.emit("message", formatMessage('Chat App', 'Welcome to Chat App'));
 
@@ -34,7 +34,7 @@ io.on("connection", (socket) => {
       formatMessage('Chat App', `${user.username} just joined the chat`)
     );
 
-      //Send users and room info
+    //Send users and room info
     io.to(user.room).emit('roomUsers', {
       room: user.room,
       users: getRoomUsers(user.room)
