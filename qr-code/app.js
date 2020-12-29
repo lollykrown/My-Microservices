@@ -5,7 +5,7 @@ const bobyParser = require("body-parser");
 const QRCode = require("qrcode");
 const QRReader = require("qrcode-reader");
 const fs = require("fs");
-// const jimp = require("jimp");
+const jimp = require("jimp");
 
 // init app
 const app = express();
