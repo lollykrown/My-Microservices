@@ -1,4 +1,4 @@
-const express = require('request')
+// const express = require('request')
 const bodyParser = require('cheerio');
 const request = require('request');
 
@@ -20,6 +20,6 @@ request('http://codedemos.com/sampleblog', (error, response, html) =>{
     $('.nav-item a').each((i, el) => {
       const item = $(el).text()
       console.log(item)
-    }
+    })
   }
 })

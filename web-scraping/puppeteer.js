@@ -470,9 +470,9 @@ const puppeteer = require("puppeteer");
 
     //Try to get car make by plate No
     // await page.goto('https://nvis.frsc.gov.ng/VehicleManagement/VerifyPlateNo', {waitUntil: "networkidle2"});
-    await page.goto('https://lollykrown.netlify.app', {waitUntil: "networkidle2"});
+    await page.goto('https://kovid-app.netlify.app/table', {waitUntil: "networkidle2"});
 
-    await page.screenshot({path: 'portfolio.png', fullPage:true});
+    await page.screenshot({path: 'kovid-app_table.png', fullPage:true});
 
     // const input = document.querySelector("input.form-control");
     // const button = document.querySelector("button.find-car");
